@@ -1,0 +1,10 @@
+{
+  "SchemaVersion": 2,
+  "Trivy": {
+    "Version": "0.71.2"
+  },
+  "ReportID": "01a11f56-2d29-7a8d-8be9-f61b2a395fb2",
+  "CreatedAt": "2026-10-09T06:25:03.785693911Z",
+  "ArtifactName": "devsecops/sast/sample-app",
+  "ArtifactType": "filesystem"
+}

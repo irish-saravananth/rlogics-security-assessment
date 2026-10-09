@@ -1,0 +1,2709 @@
+{
+  "policy_version": "1.0",
+  "artifact": "rlogics-sample:1.0.0",
+  "decision": "BLOCK",
+  "summary": {
+    "total_vulnerabilities": 335,
+    "by_severity": {
+      "CRITICAL": 3,
+      "HIGH": 91,
+      "LOW": 96,
+      "MEDIUM": 142,
+      "UNKNOWN": 3
+    },
+    "blocking_findings": 50,
+    "warnings": 285
+  },
+  "blockers": [
+    "CVE-2026-53612: HIGH vulnerability in bsdutils; fixed version available: 2.41.5-0+deb13u1",
+    "CVE-2026-53613: HIGH vulnerability in bsdutils; fixed version available: 2.41.5-0+deb13u1",
+    "CVE-2026-53614: HIGH vulnerability in bsdutils; fixed version available: 2.41.5-0+deb13u1",
+    "CVE-2026-41992: HIGH vulnerability in gzip; fixed version available: 1.13-1+deb13u1",
+    "CVE-2026-53612: HIGH vulnerability in libblkid1; fixed version available: 2.41.5-0+deb13u1",
+    "CVE-2026-53613: HIGH vulnerability in libblkid1; fixed version available: 2.41.5-0+deb13u1",
+    "CVE-2026-53614: HIGH vulnerability in libblkid1; fixed version available: 2.41.5-0+deb13u1",
+    "CVE-2026-53612: HIGH vulnerability in liblastlog2-2; fixed version available: 2.41.5-0+deb13u1",
+    "CVE-2026-53613: HIGH vulnerability in liblastlog2-2; fixed version available: 2.41.5-0+deb13u1",
+    "CVE-2026-53614: HIGH vulnerability in liblastlog2-2; fixed version available: 2.41.5-0+deb13u1",
+    "CVE-2026-53612: HIGH vulnerability in libmount1; fixed version available: 2.41.5-0+deb13u1",
+    "CVE-2026-53613: HIGH vulnerability in libmount1; fixed version available: 2.41.5-0+deb13u1",
+    "CVE-2026-53614: HIGH vulnerability in libmount1; fixed version available: 2.41.5-0+deb13u1",
+    "CVE-2026-103111: HIGH vulnerability in libpcre2-8-0; fixed version available: 10.46-1~deb13u3",
+    "CVE-2026-86145: HIGH vulnerability in libpcre2-8-0; fixed version available: 10.46-1~deb13u2",
+    "CVE-2026-89157: HIGH vulnerability in libpcre2-8-0; fixed version available: 10.46-1~deb13u2",
+    "CVE-2026-89161: HIGH vulnerability in libpcre2-8-0; fixed version available: 10.46-1~deb13u2",
+    "CVE-2026-53612: HIGH vulnerability in libsmartcols1; fixed version available: 2.41.5-0+deb13u1",
+    "CVE-2026-53613: HIGH vulnerability in libsmartcols1; fixed version available: 2.41.5-0+deb13u1",
+    "CVE-2026-53614: HIGH vulnerability in libsmartcols1; fixed version available: 2.41.5-0+deb13u1",
+    "CVE-2026-11822: HIGH vulnerability in libsqlite3-0; fixed version available: 3.46.1-7+deb13u2",
+    "CVE-2026-11824: HIGH vulnerability in libsqlite3-0; fixed version available: 3.46.1-7+deb13u2",
+    "CVE-2026-14456: HIGH vulnerability in libssl3t64; fixed version available: 3.5.7-1~deb13u2",
+    "CVE-2026-75804: HIGH vulnerability in libssl3t64; fixed version available: 3.5.7-1~deb13u3",
+    "CVE-2026-84782: HIGH vulnerability in libssl3t64; fixed version available: 3.5.7-1~deb13u3",
+    "CVE-2026-53612: HIGH vulnerability in libuuid1; fixed version available: 2.41.5-0+deb13u1",
+    "CVE-2026-53613: HIGH vulnerability in libuuid1; fixed version available: 2.41.5-0+deb13u1",
+    "CVE-2026-53614: HIGH vulnerability in libuuid1; fixed version available: 2.41.5-0+deb13u1",
+    "CVE-2026-53612: HIGH vulnerability in login; fixed version available: 2.41.5-0+deb13u1",
+    "CVE-2026-53613: HIGH vulnerability in login; fixed version available: 2.41.5-0+deb13u1",
+    "CVE-2026-53614: HIGH vulnerability in login; fixed version available: 2.41.5-0+deb13u1",
+    "CVE-2026-53612: HIGH vulnerability in mount; fixed version available: 2.41.5-0+deb13u1",
+    "CVE-2026-53613: HIGH vulnerability in mount; fixed version available: 2.41.5-0+deb13u1",
+    "CVE-2026-53614: HIGH vulnerability in mount; fixed version available: 2.41.5-0+deb13u1",
+    "CVE-2026-14456: HIGH vulnerability in openssl; fixed version available: 3.5.7-1~deb13u2",
+    "CVE-2026-75804: HIGH vulnerability in openssl; fixed version available: 3.5.7-1~deb13u3",
+    "CVE-2026-84782: HIGH vulnerability in openssl; fixed version available: 3.5.7-1~deb13u3",
+    "CVE-2026-14456: HIGH vulnerability in openssl-provider-legacy; fixed version available: 3.5.7-1~deb13u2",
+    "CVE-2026-75804: HIGH vulnerability in openssl-provider-legacy; fixed version available: 3.5.7-1~deb13u3",
+    "CVE-2026-84782: HIGH vulnerability in openssl-provider-legacy; fixed version available: 3.5.7-1~deb13u3",
+    "CVE-2026-13221: CRITICAL vulnerability in perl-base",
+    "CVE-2026-42496: CRITICAL vulnerability in perl-base",
+    "CVE-2026-8376: CRITICAL vulnerability in perl-base",
+    "CVE-2026-42497: HIGH vulnerability in perl-base; fixed version available: 5.40.1-6+deb13u1",
+    "CVE-2026-48962: HIGH vulnerability in perl-base; fixed version available: 5.40.1-6+deb13u1",
+    "CVE-2026-57432: HIGH vulnerability in perl-base; fixed version available: 5.40.1-6+deb13u1",
+    "CVE-2026-57433: HIGH vulnerability in perl-base; fixed version available: 5.40.1-6+deb13u1",
+    "CVE-2026-53612: HIGH vulnerability in util-linux; fixed version available: 2.41.5-0+deb13u1",
+    "CVE-2026-53613: HIGH vulnerability in util-linux; fixed version available: 2.41.5-0+deb13u1",
+    "CVE-2026-53614: HIGH vulnerability in util-linux; fixed version available: 2.41.5-0+deb13u1"
+  ],
+  "warnings": [
+    "CVE-2011-3374: LOW vulnerability in apt",
+    "TEMP-0841856-B18BAF: LOW vulnerability in bash",
+    "CVE-2026-76642: HIGH vulnerability in bsdutils; no fixed version reported",
+    "CVE-2026-78408: HIGH vulnerability in bsdutils; no fixed version reported",
+    "CVE-2026-78409: HIGH vulnerability in bsdutils; no fixed version reported",
+    "CVE-2026-78410: HIGH vulnerability in bsdutils; no fixed version reported",
+    "CVE-2026-13595: MEDIUM vulnerability in bsdutils",
+    "CVE-2026-27456: MEDIUM vulnerability in bsdutils",
+    "CVE-2026-3184: MEDIUM vulnerability in bsdutils",
+    "CVE-2026-53615: MEDIUM vulnerability in bsdutils",
+    "CVE-2022-0563: LOW vulnerability in bsdutils",
+    "CVE-2025-14104: LOW vulnerability in bsdutils",
+    "CVE-2017-18018: LOW vulnerability in coreutils",
+    "CVE-2025-5278: LOW vulnerability in coreutils",
+    "CVE-2026-56391: LOW vulnerability in coreutils",
+    "CVE-2026-56392: LOW vulnerability in coreutils",
+    "CVE-2026-102473: LOW vulnerability in dash",
+    "CVE-2026-102474: LOW vulnerability in dash",
+    "CVE-2026-53910: LOW vulnerability in diffutils",
+    "CVE-2026-102010: MEDIUM vulnerability in gcc-14-base",
+    "CVE-2026-95619: MEDIUM vulnerability in gcc-14-base",
+    "CVE-2026-41991: MEDIUM vulnerability in gzip",
+    "CVE-2026-54369: HIGH vulnerability in libacl1; no fixed version reported",
+    "CVE-2026-54370: MEDIUM vulnerability in libacl1",
+    "CVE-2011-3374: LOW vulnerability in libapt-pkg7.0",
+    "CVE-2026-54371: MEDIUM vulnerability in libattr1",
+    "CVE-2026-76642: HIGH vulnerability in libblkid1; no fixed version reported",
+    "CVE-2026-78408: HIGH vulnerability in libblkid1; no fixed version reported",
+    "CVE-2026-78409: HIGH vulnerability in libblkid1; no fixed version reported",
+    "CVE-2026-78410: HIGH vulnerability in libblkid1; no fixed version reported",
+    "CVE-2026-13595: MEDIUM vulnerability in libblkid1",
+    "CVE-2026-27456: MEDIUM vulnerability in libblkid1",
+    "CVE-2026-3184: MEDIUM vulnerability in libblkid1",
+    "CVE-2026-53615: MEDIUM vulnerability in libblkid1",
+    "CVE-2022-0563: LOW vulnerability in libblkid1",
+    "CVE-2025-14104: LOW vulnerability in libblkid1",
+    "CVE-2026-42250: MEDIUM vulnerability in libbz2-1.0",
+    "CVE-2026-18374: MEDIUM vulnerability in libc-bin",
+    "CVE-2026-19499: MEDIUM vulnerability in libc-bin",
+    "CVE-2026-19542: MEDIUM vulnerability in libc-bin",
+    "CVE-2026-5435: MEDIUM vulnerability in libc-bin",
+    "CVE-2026-5450: MEDIUM vulnerability in libc-bin",
+    "CVE-2026-5928: MEDIUM vulnerability in libc-bin",
+    "CVE-2026-6238: MEDIUM vulnerability in libc-bin",
+    "CVE-2026-6368: MEDIUM vulnerability in libc-bin",
+    "CVE-2026-6791: MEDIUM vulnerability in libc-bin",
+    "CVE-2026-77117: MEDIUM vulnerability in libc-bin",
+    "CVE-2026-80489: MEDIUM vulnerability in libc-bin",
+    "CVE-2026-8674: MEDIUM vulnerability in libc-bin",
+    "CVE-2026-86805: MEDIUM vulnerability in libc-bin",
+    "CVE-2026-89092: MEDIUM vulnerability in libc-bin",
+    "CVE-2026-95818: MEDIUM vulnerability in libc-bin",
+    "CVE-2010-4756: LOW vulnerability in libc-bin",
+    "CVE-2018-20796: LOW vulnerability in libc-bin",
+    "CVE-2019-1010022: LOW vulnerability in libc-bin",
+    "CVE-2019-1010023: LOW vulnerability in libc-bin",
+    "CVE-2019-1010024: LOW vulnerability in libc-bin",
+    "CVE-2019-1010025: LOW vulnerability in libc-bin",
+    "CVE-2019-9192: LOW vulnerability in libc-bin",
+    "CVE-2026-97399: LOW vulnerability in libc-bin",
+    "CVE-2026-18374: MEDIUM vulnerability in libc6",
+    "CVE-2026-19499: MEDIUM vulnerability in libc6",
+    "CVE-2026-19542: MEDIUM vulnerability in libc6",
+    "CVE-2026-5435: MEDIUM vulnerability in libc6",
+    "CVE-2026-5450: MEDIUM vulnerability in libc6",
+    "CVE-2026-5928: MEDIUM vulnerability in libc6",
+    "CVE-2026-6238: MEDIUM vulnerability in libc6",
+    "CVE-2026-6368: MEDIUM vulnerability in libc6",
+    "CVE-2026-6791: MEDIUM vulnerability in libc6",
+    "CVE-2026-77117: MEDIUM vulnerability in libc6",
+    "CVE-2026-80489: MEDIUM vulnerability in libc6",
+    "CVE-2026-8674: MEDIUM vulnerability in libc6",
+    "CVE-2026-86805: MEDIUM vulnerability in libc6",
+    "CVE-2026-89092: MEDIUM vulnerability in libc6",
+    "CVE-2026-95818: MEDIUM vulnerability in libc6",
+    "CVE-2010-4756: LOW vulnerability in libc6",
+    "CVE-2018-20796: LOW vulnerability in libc6",
+    "CVE-2019-1010022: LOW vulnerability in libc6",
+    "CVE-2019-1010023: LOW vulnerability in libc6",
+    "CVE-2019-1010024: LOW vulnerability in libc6",
+    "CVE-2019-1010025: LOW vulnerability in libc6",
+    "CVE-2019-9192: LOW vulnerability in libc6",
+    "CVE-2026-97399: LOW vulnerability in libc6",
+    "CVE-2026-102010: MEDIUM vulnerability in libgcc-s1",
+    "CVE-2026-95619: MEDIUM vulnerability in libgcc-s1",
+    "CVE-2026-76642: HIGH vulnerability in liblastlog2-2; no fixed version reported",
+    "CVE-2026-78408: HIGH vulnerability in liblastlog2-2; no fixed version reported",
+    "CVE-2026-78409: HIGH vulnerability in liblastlog2-2; no fixed version reported",
+    "CVE-2026-78410: HIGH vulnerability in liblastlog2-2; no fixed version reported",
+    "CVE-2026-13595: MEDIUM vulnerability in liblastlog2-2",
+    "CVE-2026-27456: MEDIUM vulnerability in liblastlog2-2",
+    "CVE-2026-3184: MEDIUM vulnerability in liblastlog2-2",
+    "CVE-2026-53615: MEDIUM vulnerability in liblastlog2-2",
+    "CVE-2022-0563: LOW vulnerability in liblastlog2-2",
+    "CVE-2025-14104: LOW vulnerability in liblastlog2-2",
+    "CVE-2026-34743: MEDIUM vulnerability in liblzma5",
+    "DSA-6549-1: UNKNOWN vulnerability in liblzma5",
+    "TEMP-1147318-639065: UNKNOWN vulnerability in liblzma5",
+    "CVE-2026-76642: HIGH vulnerability in libmount1; no fixed version reported",
+    "CVE-2026-78408: HIGH vulnerability in libmount1; no fixed version reported",
+    "CVE-2026-78409: HIGH vulnerability in libmount1; no fixed version reported",
+    "CVE-2026-78410: HIGH vulnerability in libmount1; no fixed version reported",
+    "CVE-2026-13595: MEDIUM vulnerability in libmount1",
+    "CVE-2026-27456: MEDIUM vulnerability in libmount1",
+    "CVE-2026-3184: MEDIUM vulnerability in libmount1",
+    "CVE-2026-53615: MEDIUM vulnerability in libmount1",
+    "CVE-2022-0563: LOW vulnerability in libmount1",
+    "CVE-2025-14104: LOW vulnerability in libmount1",
+    "CVE-2025-69720: HIGH vulnerability in libncursesw6; no fixed version reported",
+    "CVE-2025-6141: LOW vulnerability in libncursesw6",
+    "CVE-2026-54411: MEDIUM vulnerability in libpam-modules",
+    "CVE-2026-54411: MEDIUM vulnerability in libpam-modules-bin",
+    "CVE-2026-54411: MEDIUM vulnerability in libpam-runtime",
+    "CVE-2026-54411: MEDIUM vulnerability in libpam0g",
+    "CVE-2026-89156: MEDIUM vulnerability in libpcre2-8-0",
+    "CVE-2026-89158: MEDIUM vulnerability in libpcre2-8-0",
+    "CVE-2026-89160: MEDIUM vulnerability in libpcre2-8-0",
+    "CVE-2026-89162: LOW vulnerability in libpcre2-8-0",
+    "CVE-2026-76642: HIGH vulnerability in libsmartcols1; no fixed version reported",
+    "CVE-2026-78408: HIGH vulnerability in libsmartcols1; no fixed version reported",
+    "CVE-2026-78409: HIGH vulnerability in libsmartcols1; no fixed version reported",
+    "CVE-2026-78410: HIGH vulnerability in libsmartcols1; no fixed version reported",
+    "CVE-2026-13595: MEDIUM vulnerability in libsmartcols1",
+    "CVE-2026-27456: MEDIUM vulnerability in libsmartcols1",
+    "CVE-2026-3184: MEDIUM vulnerability in libsmartcols1",
+    "CVE-2026-53615: MEDIUM vulnerability in libsmartcols1",
+    "CVE-2022-0563: LOW vulnerability in libsmartcols1",
+    "CVE-2025-14104: LOW vulnerability in libsmartcols1",
+    "CVE-2026-50812: MEDIUM vulnerability in libsqlite3-0",
+    "CVE-2026-50813: MEDIUM vulnerability in libsqlite3-0",
+    "CVE-2021-45346: LOW vulnerability in libsqlite3-0",
+    "CVE-2025-70873: LOW vulnerability in libsqlite3-0",
+    "CVE-2026-18798: MEDIUM vulnerability in libssl3t64",
+    "CVE-2026-42772: MEDIUM vulnerability in libssl3t64",
+    "CVE-2026-54872: MEDIUM vulnerability in libssl3t64",
+    "CVE-2026-54873: MEDIUM vulnerability in libssl3t64",
+    "CVE-2026-54875: MEDIUM vulnerability in libssl3t64",
+    "CVE-2026-63072: MEDIUM vulnerability in libssl3t64",
+    "CVE-2026-63076: MEDIUM vulnerability in libssl3t64",
+    "CVE-2026-72897: MEDIUM vulnerability in libssl3t64",
+    "CVE-2026-75805: MEDIUM vulnerability in libssl3t64",
+    "CVE-2026-75806: MEDIUM vulnerability in libssl3t64",
+    "CVE-2026-77696: MEDIUM vulnerability in libssl3t64",
+    "CVE-2026-84784: MEDIUM vulnerability in libssl3t64",
+    "CVE-2026-14457: LOW vulnerability in libssl3t64",
+    "CVE-2026-35189: LOW vulnerability in libssl3t64",
+    "CVE-2026-35191: LOW vulnerability in libssl3t64",
+    "CVE-2026-54874: LOW vulnerability in libssl3t64",
+    "CVE-2026-63073: LOW vulnerability in libssl3t64",
+    "CVE-2026-63074: LOW vulnerability in libssl3t64",
+    "CVE-2026-63075: LOW vulnerability in libssl3t64",
+    "CVE-2026-75803: LOW vulnerability in libssl3t64",
+    "CVE-2026-102010: MEDIUM vulnerability in libstdc++6",
+    "CVE-2026-95619: MEDIUM vulnerability in libstdc++6",
+    "CVE-2026-16742: HIGH vulnerability in libsystemd0; no fixed version reported",
+    "CVE-2026-15059: MEDIUM vulnerability in libsystemd0",
+    "CVE-2013-4392: LOW vulnerability in libsystemd0",
+    "CVE-2023-31437: LOW vulnerability in libsystemd0",
+    "CVE-2023-31438: LOW vulnerability in libsystemd0",
+    "CVE-2023-31439: LOW vulnerability in libsystemd0",
+    "CVE-2026-40228: LOW vulnerability in libsystemd0",
+    "CVE-2025-69720: HIGH vulnerability in libtinfo6; no fixed version reported",
+    "CVE-2025-6141: LOW vulnerability in libtinfo6",
+    "CVE-2026-16742: HIGH vulnerability in libudev1; no fixed version reported",
+    "CVE-2026-15059: MEDIUM vulnerability in libudev1",
+    "CVE-2013-4392: LOW vulnerability in libudev1",
+    "CVE-2023-31437: LOW vulnerability in libudev1",
+    "CVE-2023-31438: LOW vulnerability in libudev1",
+    "CVE-2023-31439: LOW vulnerability in libudev1",
+    "CVE-2026-40228: LOW vulnerability in libudev1",
+    "CVE-2026-76642: HIGH vulnerability in libuuid1; no fixed version reported",
+    "CVE-2026-78408: HIGH vulnerability in libuuid1; no fixed version reported",
+    "CVE-2026-78409: HIGH vulnerability in libuuid1; no fixed version reported",
+    "CVE-2026-78410: HIGH vulnerability in libuuid1; no fixed version reported",
+    "CVE-2026-13595: MEDIUM vulnerability in libuuid1",
+    "CVE-2026-27456: MEDIUM vulnerability in libuuid1",
+    "CVE-2026-3184: MEDIUM vulnerability in libuuid1",
+    "CVE-2026-53615: MEDIUM vulnerability in libuuid1",
+    "CVE-2022-0563: LOW vulnerability in libuuid1",
+    "CVE-2025-14104: LOW vulnerability in libuuid1",
+    "CVE-2026-76642: HIGH vulnerability in login; no fixed version reported",
+    "CVE-2026-78408: HIGH vulnerability in login; no fixed version reported",
+    "CVE-2026-78409: HIGH vulnerability in login; no fixed version reported",
+    "CVE-2026-78410: HIGH vulnerability in login; no fixed version reported",
+    "CVE-2026-13595: MEDIUM vulnerability in login",
+    "CVE-2026-27456: MEDIUM vulnerability in login",
+    "CVE-2026-3184: MEDIUM vulnerability in login",
+    "CVE-2026-53615: MEDIUM vulnerability in login",
+    "CVE-2022-0563: LOW vulnerability in login",
+    "CVE-2025-14104: LOW vulnerability in login",
+    "CVE-2007-5686: LOW vulnerability in login.defs",
+    "CVE-2024-56433: LOW vulnerability in login.defs",
+    "TEMP-0628843-DBAD28: LOW vulnerability in login.defs",
+    "CVE-2026-76642: HIGH vulnerability in mount; no fixed version reported",
+    "CVE-2026-78408: HIGH vulnerability in mount; no fixed version reported",
+    "CVE-2026-78409: HIGH vulnerability in mount; no fixed version reported",
+    "CVE-2026-78410: HIGH vulnerability in mount; no fixed version reported",
+    "CVE-2026-13595: MEDIUM vulnerability in mount",
+    "CVE-2026-27456: MEDIUM vulnerability in mount",
+    "CVE-2026-3184: MEDIUM vulnerability in mount",
+    "CVE-2026-53615: MEDIUM vulnerability in mount",
+    "CVE-2022-0563: LOW vulnerability in mount",
+    "CVE-2025-14104: LOW vulnerability in mount",
+    "CVE-2025-69720: HIGH vulnerability in ncurses-base; no fixed version reported",
+    "CVE-2025-6141: LOW vulnerability in ncurses-base",
+    "CVE-2025-69720: HIGH vulnerability in ncurses-bin; no fixed version reported",
+    "CVE-2025-6141: LOW vulnerability in ncurses-bin",
+    "CVE-2026-18798: MEDIUM vulnerability in openssl",
+    "CVE-2026-42772: MEDIUM vulnerability in openssl",
+    "CVE-2026-54872: MEDIUM vulnerability in openssl",
+    "CVE-2026-54873: MEDIUM vulnerability in openssl",
+    "CVE-2026-54875: MEDIUM vulnerability in openssl",
+    "CVE-2026-63072: MEDIUM vulnerability in openssl",
+    "CVE-2026-63076: MEDIUM vulnerability in openssl",
+    "CVE-2026-72897: MEDIUM vulnerability in openssl",
+    "CVE-2026-75805: MEDIUM vulnerability in openssl",
+    "CVE-2026-75806: MEDIUM vulnerability in openssl",
+    "CVE-2026-77696: MEDIUM vulnerability in openssl",
+    "CVE-2026-84784: MEDIUM vulnerability in openssl",
+    "CVE-2026-14457: LOW vulnerability in openssl",
+    "CVE-2026-35189: LOW vulnerability in openssl",
+    "CVE-2026-35191: LOW vulnerability in openssl",
+    "CVE-2026-54874: LOW vulnerability in openssl",
+    "CVE-2026-63073: LOW vulnerability in openssl",
+    "CVE-2026-63074: LOW vulnerability in openssl",
+    "CVE-2026-63075: LOW vulnerability in openssl",
+    "CVE-2026-75803: LOW vulnerability in openssl",
+    "CVE-2026-18798: MEDIUM vulnerability in openssl-provider-legacy",
+    "CVE-2026-42772: MEDIUM vulnerability in openssl-provider-legacy",
+    "CVE-2026-54872: MEDIUM vulnerability in openssl-provider-legacy",
+    "CVE-2026-54873: MEDIUM vulnerability in openssl-provider-legacy",
+    "CVE-2026-54875: MEDIUM vulnerability in openssl-provider-legacy",
+    "CVE-2026-63072: MEDIUM vulnerability in openssl-provider-legacy",
+    "CVE-2026-63076: MEDIUM vulnerability in openssl-provider-legacy",
+    "CVE-2026-72897: MEDIUM vulnerability in openssl-provider-legacy",
+    "CVE-2026-75805: MEDIUM vulnerability in openssl-provider-legacy",
+    "CVE-2026-75806: MEDIUM vulnerability in openssl-provider-legacy",
+    "CVE-2026-77696: MEDIUM vulnerability in openssl-provider-legacy",
+    "CVE-2026-84784: MEDIUM vulnerability in openssl-provider-legacy",
+    "CVE-2026-14457: LOW vulnerability in openssl-provider-legacy",
+    "CVE-2026-35189: LOW vulnerability in openssl-provider-legacy",
+    "CVE-2026-35191: LOW vulnerability in openssl-provider-legacy",
+    "CVE-2026-54874: LOW vulnerability in openssl-provider-legacy",
+    "CVE-2026-63073: LOW vulnerability in openssl-provider-legacy",
+    "CVE-2026-63074: LOW vulnerability in openssl-provider-legacy",
+    "CVE-2026-63075: LOW vulnerability in openssl-provider-legacy",
+    "CVE-2026-75803: LOW vulnerability in openssl-provider-legacy",
+    "CVE-2007-5686: LOW vulnerability in passwd",
+    "CVE-2024-56433: LOW vulnerability in passwd",
+    "TEMP-0628843-DBAD28: LOW vulnerability in passwd",
+    "CVE-2026-9538: HIGH vulnerability in perl-base; no fixed version reported",
+    "CVE-2025-15649: MEDIUM vulnerability in perl-base",
+    "CVE-2026-12087: MEDIUM vulnerability in perl-base",
+    "CVE-2026-15534: MEDIUM vulnerability in perl-base",
+    "CVE-2026-19487: MEDIUM vulnerability in perl-base",
+    "CVE-2026-48959: MEDIUM vulnerability in perl-base",
+    "CVE-2026-48961: MEDIUM vulnerability in perl-base",
+    "CVE-2026-7010: MEDIUM vulnerability in perl-base",
+    "CVE-2026-7017: MEDIUM vulnerability in perl-base",
+    "CVE-2011-4116: LOW vulnerability in perl-base",
+    "CVE-2026-82560: UNKNOWN vulnerability in perl-base",
+    "TEMP-0517018-A83CE6: LOW vulnerability in sysvinit-utils",
+    "CVE-2026-18477: MEDIUM vulnerability in tar",
+    "CVE-2026-18508: MEDIUM vulnerability in tar",
+    "CVE-2026-5704: MEDIUM vulnerability in tar",
+    "CVE-2005-2541: LOW vulnerability in tar",
+    "TEMP-0290435-0B57B5: LOW vulnerability in tar",
+    "CVE-2026-76642: HIGH vulnerability in util-linux; no fixed version reported",
+    "CVE-2026-78408: HIGH vulnerability in util-linux; no fixed version reported",
+    "CVE-2026-78409: HIGH vulnerability in util-linux; no fixed version reported",
+    "CVE-2026-78410: HIGH vulnerability in util-linux; no fixed version reported",
+    "CVE-2026-13595: MEDIUM vulnerability in util-linux",
+    "CVE-2026-27456: MEDIUM vulnerability in util-linux",
+    "CVE-2026-3184: MEDIUM vulnerability in util-linux",
+    "CVE-2026-53615: MEDIUM vulnerability in util-linux",
+    "CVE-2022-0563: LOW vulnerability in util-linux",
+    "CVE-2025-14104: LOW vulnerability in util-linux",
+    "CVE-2026-27171: MEDIUM vulnerability in zlib1g",
+    "CVE-2026-85091: MEDIUM vulnerability in zlib1g",
+    "CVE-2025-8869: MEDIUM vulnerability in pip",
+    "CVE-2026-13346: MEDIUM vulnerability in pip",
+    "CVE-2026-3219: MEDIUM vulnerability in pip",
+    "CVE-2026-6357: MEDIUM vulnerability in pip",
+    "CVE-2026-8643: MEDIUM vulnerability in pip",
+    "CVE-2026-1703: LOW vulnerability in pip"
+  ],
+  "findings": [
+    {
+      "id": "CVE-2011-3374",
+      "package": "apt",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "TEMP-0841856-B18BAF",
+      "package": "bash",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-53612",
+      "package": "bsdutils",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2026-53613",
+      "package": "bsdutils",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2026-53614",
+      "package": "bsdutils",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2026-76642",
+      "package": "bsdutils",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-78408",
+      "package": "bsdutils",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-78409",
+      "package": "bsdutils",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-78410",
+      "package": "bsdutils",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-13595",
+      "package": "bsdutils",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2026-27456",
+      "package": "bsdutils",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2026-3184",
+      "package": "bsdutils",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-53615",
+      "package": "bsdutils",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2022-0563",
+      "package": "bsdutils",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2025-14104",
+      "package": "bsdutils",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.3-1"
+    },
+    {
+      "id": "CVE-2017-18018",
+      "package": "coreutils",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2025-5278",
+      "package": "coreutils",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-56391",
+      "package": "coreutils",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-56392",
+      "package": "coreutils",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-102473",
+      "package": "dash",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-102474",
+      "package": "dash",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-53910",
+      "package": "diffutils",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-102010",
+      "package": "gcc-14-base",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-95619",
+      "package": "gcc-14-base",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-41992",
+      "package": "gzip",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "1.13-1+deb13u1"
+    },
+    {
+      "id": "CVE-2026-41991",
+      "package": "gzip",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "1.13-1+deb13u1"
+    },
+    {
+      "id": "CVE-2026-54369",
+      "package": "libacl1",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-54370",
+      "package": "libacl1",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2011-3374",
+      "package": "libapt-pkg7.0",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-54371",
+      "package": "libattr1",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-53612",
+      "package": "libblkid1",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2026-53613",
+      "package": "libblkid1",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2026-53614",
+      "package": "libblkid1",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2026-76642",
+      "package": "libblkid1",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-78408",
+      "package": "libblkid1",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-78409",
+      "package": "libblkid1",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-78410",
+      "package": "libblkid1",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-13595",
+      "package": "libblkid1",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2026-27456",
+      "package": "libblkid1",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2026-3184",
+      "package": "libblkid1",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-53615",
+      "package": "libblkid1",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2022-0563",
+      "package": "libblkid1",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2025-14104",
+      "package": "libblkid1",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.3-1"
+    },
+    {
+      "id": "CVE-2026-42250",
+      "package": "libbz2-1.0",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-18374",
+      "package": "libc-bin",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-19499",
+      "package": "libc-bin",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-19542",
+      "package": "libc-bin",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-5435",
+      "package": "libc-bin",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-5450",
+      "package": "libc-bin",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41-12+deb13u4"
+    },
+    {
+      "id": "CVE-2026-5928",
+      "package": "libc-bin",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41-12+deb13u4"
+    },
+    {
+      "id": "CVE-2026-6238",
+      "package": "libc-bin",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-6368",
+      "package": "libc-bin",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-6791",
+      "package": "libc-bin",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-77117",
+      "package": "libc-bin",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-80489",
+      "package": "libc-bin",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-8674",
+      "package": "libc-bin",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-86805",
+      "package": "libc-bin",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-89092",
+      "package": "libc-bin",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-95818",
+      "package": "libc-bin",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2010-4756",
+      "package": "libc-bin",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2018-20796",
+      "package": "libc-bin",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2019-1010022",
+      "package": "libc-bin",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2019-1010023",
+      "package": "libc-bin",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2019-1010024",
+      "package": "libc-bin",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2019-1010025",
+      "package": "libc-bin",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2019-9192",
+      "package": "libc-bin",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-97399",
+      "package": "libc-bin",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-18374",
+      "package": "libc6",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-19499",
+      "package": "libc6",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-19542",
+      "package": "libc6",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-5435",
+      "package": "libc6",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-5450",
+      "package": "libc6",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41-12+deb13u4"
+    },
+    {
+      "id": "CVE-2026-5928",
+      "package": "libc6",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41-12+deb13u4"
+    },
+    {
+      "id": "CVE-2026-6238",
+      "package": "libc6",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-6368",
+      "package": "libc6",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-6791",
+      "package": "libc6",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-77117",
+      "package": "libc6",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-80489",
+      "package": "libc6",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-8674",
+      "package": "libc6",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-86805",
+      "package": "libc6",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-89092",
+      "package": "libc6",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-95818",
+      "package": "libc6",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2010-4756",
+      "package": "libc6",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2018-20796",
+      "package": "libc6",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2019-1010022",
+      "package": "libc6",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2019-1010023",
+      "package": "libc6",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2019-1010024",
+      "package": "libc6",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2019-1010025",
+      "package": "libc6",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2019-9192",
+      "package": "libc6",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-97399",
+      "package": "libc6",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-102010",
+      "package": "libgcc-s1",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-95619",
+      "package": "libgcc-s1",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-53612",
+      "package": "liblastlog2-2",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2026-53613",
+      "package": "liblastlog2-2",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2026-53614",
+      "package": "liblastlog2-2",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2026-76642",
+      "package": "liblastlog2-2",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-78408",
+      "package": "liblastlog2-2",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-78409",
+      "package": "liblastlog2-2",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-78410",
+      "package": "liblastlog2-2",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-13595",
+      "package": "liblastlog2-2",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2026-27456",
+      "package": "liblastlog2-2",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2026-3184",
+      "package": "liblastlog2-2",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-53615",
+      "package": "liblastlog2-2",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2022-0563",
+      "package": "liblastlog2-2",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2025-14104",
+      "package": "liblastlog2-2",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.3-1"
+    },
+    {
+      "id": "CVE-2026-34743",
+      "package": "liblzma5",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "5.8.1-1+deb13u1"
+    },
+    {
+      "id": "DSA-6549-1",
+      "package": "liblzma5",
+      "severity": "UNKNOWN",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "5.8.1-1+deb13u2"
+    },
+    {
+      "id": "TEMP-1147318-639065",
+      "package": "liblzma5",
+      "severity": "UNKNOWN",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "5.8.1-1+deb13u2"
+    },
+    {
+      "id": "CVE-2026-53612",
+      "package": "libmount1",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2026-53613",
+      "package": "libmount1",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2026-53614",
+      "package": "libmount1",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2026-76642",
+      "package": "libmount1",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-78408",
+      "package": "libmount1",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-78409",
+      "package": "libmount1",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-78410",
+      "package": "libmount1",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-13595",
+      "package": "libmount1",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2026-27456",
+      "package": "libmount1",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2026-3184",
+      "package": "libmount1",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-53615",
+      "package": "libmount1",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2022-0563",
+      "package": "libmount1",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2025-14104",
+      "package": "libmount1",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.3-1"
+    },
+    {
+      "id": "CVE-2025-69720",
+      "package": "libncursesw6",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2025-6141",
+      "package": "libncursesw6",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-54411",
+      "package": "libpam-modules",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-54411",
+      "package": "libpam-modules-bin",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-54411",
+      "package": "libpam-runtime",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-54411",
+      "package": "libpam0g",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-103111",
+      "package": "libpcre2-8-0",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "10.46-1~deb13u3"
+    },
+    {
+      "id": "CVE-2026-86145",
+      "package": "libpcre2-8-0",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "10.46-1~deb13u2"
+    },
+    {
+      "id": "CVE-2026-89157",
+      "package": "libpcre2-8-0",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "10.46-1~deb13u2"
+    },
+    {
+      "id": "CVE-2026-89161",
+      "package": "libpcre2-8-0",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "10.46-1~deb13u2"
+    },
+    {
+      "id": "CVE-2026-89156",
+      "package": "libpcre2-8-0",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "10.46-1~deb13u2"
+    },
+    {
+      "id": "CVE-2026-89158",
+      "package": "libpcre2-8-0",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "10.46-1~deb13u2"
+    },
+    {
+      "id": "CVE-2026-89160",
+      "package": "libpcre2-8-0",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "10.46-1~deb13u2"
+    },
+    {
+      "id": "CVE-2026-89162",
+      "package": "libpcre2-8-0",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "10.46-1~deb13u2"
+    },
+    {
+      "id": "CVE-2026-53612",
+      "package": "libsmartcols1",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2026-53613",
+      "package": "libsmartcols1",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2026-53614",
+      "package": "libsmartcols1",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2026-76642",
+      "package": "libsmartcols1",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-78408",
+      "package": "libsmartcols1",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-78409",
+      "package": "libsmartcols1",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-78410",
+      "package": "libsmartcols1",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-13595",
+      "package": "libsmartcols1",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2026-27456",
+      "package": "libsmartcols1",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2026-3184",
+      "package": "libsmartcols1",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-53615",
+      "package": "libsmartcols1",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2022-0563",
+      "package": "libsmartcols1",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2025-14104",
+      "package": "libsmartcols1",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.3-1"
+    },
+    {
+      "id": "CVE-2026-11822",
+      "package": "libsqlite3-0",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.46.1-7+deb13u2"
+    },
+    {
+      "id": "CVE-2026-11824",
+      "package": "libsqlite3-0",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.46.1-7+deb13u2"
+    },
+    {
+      "id": "CVE-2026-50812",
+      "package": "libsqlite3-0",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-50813",
+      "package": "libsqlite3-0",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2021-45346",
+      "package": "libsqlite3-0",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2025-70873",
+      "package": "libsqlite3-0",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-14456",
+      "package": "libssl3t64",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u2"
+    },
+    {
+      "id": "CVE-2026-75804",
+      "package": "libssl3t64",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u3"
+    },
+    {
+      "id": "CVE-2026-84782",
+      "package": "libssl3t64",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u3"
+    },
+    {
+      "id": "CVE-2026-18798",
+      "package": "libssl3t64",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u2"
+    },
+    {
+      "id": "CVE-2026-42772",
+      "package": "libssl3t64",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u3"
+    },
+    {
+      "id": "CVE-2026-54872",
+      "package": "libssl3t64",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u3"
+    },
+    {
+      "id": "CVE-2026-54873",
+      "package": "libssl3t64",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u3"
+    },
+    {
+      "id": "CVE-2026-54875",
+      "package": "libssl3t64",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u3"
+    },
+    {
+      "id": "CVE-2026-63072",
+      "package": "libssl3t64",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u2"
+    },
+    {
+      "id": "CVE-2026-63076",
+      "package": "libssl3t64",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u2"
+    },
+    {
+      "id": "CVE-2026-72897",
+      "package": "libssl3t64",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u3"
+    },
+    {
+      "id": "CVE-2026-75805",
+      "package": "libssl3t64",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u3"
+    },
+    {
+      "id": "CVE-2026-75806",
+      "package": "libssl3t64",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u3"
+    },
+    {
+      "id": "CVE-2026-77696",
+      "package": "libssl3t64",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u3"
+    },
+    {
+      "id": "CVE-2026-84784",
+      "package": "libssl3t64",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u3"
+    },
+    {
+      "id": "CVE-2026-14457",
+      "package": "libssl3t64",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u2"
+    },
+    {
+      "id": "CVE-2026-35189",
+      "package": "libssl3t64",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u3"
+    },
+    {
+      "id": "CVE-2026-35191",
+      "package": "libssl3t64",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u3"
+    },
+    {
+      "id": "CVE-2026-54874",
+      "package": "libssl3t64",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u2"
+    },
+    {
+      "id": "CVE-2026-63073",
+      "package": "libssl3t64",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u2"
+    },
+    {
+      "id": "CVE-2026-63074",
+      "package": "libssl3t64",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u2"
+    },
+    {
+      "id": "CVE-2026-63075",
+      "package": "libssl3t64",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u2"
+    },
+    {
+      "id": "CVE-2026-75803",
+      "package": "libssl3t64",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u2"
+    },
+    {
+      "id": "CVE-2026-102010",
+      "package": "libstdc++6",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-95619",
+      "package": "libstdc++6",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-16742",
+      "package": "libsystemd0",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-15059",
+      "package": "libsystemd0",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2013-4392",
+      "package": "libsystemd0",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2023-31437",
+      "package": "libsystemd0",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2023-31438",
+      "package": "libsystemd0",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2023-31439",
+      "package": "libsystemd0",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-40228",
+      "package": "libsystemd0",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2025-69720",
+      "package": "libtinfo6",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2025-6141",
+      "package": "libtinfo6",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-16742",
+      "package": "libudev1",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-15059",
+      "package": "libudev1",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2013-4392",
+      "package": "libudev1",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2023-31437",
+      "package": "libudev1",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2023-31438",
+      "package": "libudev1",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2023-31439",
+      "package": "libudev1",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-40228",
+      "package": "libudev1",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-53612",
+      "package": "libuuid1",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2026-53613",
+      "package": "libuuid1",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2026-53614",
+      "package": "libuuid1",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2026-76642",
+      "package": "libuuid1",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-78408",
+      "package": "libuuid1",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-78409",
+      "package": "libuuid1",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-78410",
+      "package": "libuuid1",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-13595",
+      "package": "libuuid1",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2026-27456",
+      "package": "libuuid1",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2026-3184",
+      "package": "libuuid1",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-53615",
+      "package": "libuuid1",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2022-0563",
+      "package": "libuuid1",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2025-14104",
+      "package": "libuuid1",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.3-1"
+    },
+    {
+      "id": "CVE-2026-53612",
+      "package": "login",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2026-53613",
+      "package": "login",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2026-53614",
+      "package": "login",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2026-76642",
+      "package": "login",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-78408",
+      "package": "login",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-78409",
+      "package": "login",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-78410",
+      "package": "login",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-13595",
+      "package": "login",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2026-27456",
+      "package": "login",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2026-3184",
+      "package": "login",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-53615",
+      "package": "login",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2022-0563",
+      "package": "login",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2025-14104",
+      "package": "login",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.3-1"
+    },
+    {
+      "id": "CVE-2007-5686",
+      "package": "login.defs",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2024-56433",
+      "package": "login.defs",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "TEMP-0628843-DBAD28",
+      "package": "login.defs",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-53612",
+      "package": "mount",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2026-53613",
+      "package": "mount",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2026-53614",
+      "package": "mount",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2026-76642",
+      "package": "mount",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-78408",
+      "package": "mount",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-78409",
+      "package": "mount",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-78410",
+      "package": "mount",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-13595",
+      "package": "mount",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2026-27456",
+      "package": "mount",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2026-3184",
+      "package": "mount",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-53615",
+      "package": "mount",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2022-0563",
+      "package": "mount",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2025-14104",
+      "package": "mount",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.3-1"
+    },
+    {
+      "id": "CVE-2025-69720",
+      "package": "ncurses-base",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2025-6141",
+      "package": "ncurses-base",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2025-69720",
+      "package": "ncurses-bin",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2025-6141",
+      "package": "ncurses-bin",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-14456",
+      "package": "openssl",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u2"
+    },
+    {
+      "id": "CVE-2026-75804",
+      "package": "openssl",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u3"
+    },
+    {
+      "id": "CVE-2026-84782",
+      "package": "openssl",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u3"
+    },
+    {
+      "id": "CVE-2026-18798",
+      "package": "openssl",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u2"
+    },
+    {
+      "id": "CVE-2026-42772",
+      "package": "openssl",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u3"
+    },
+    {
+      "id": "CVE-2026-54872",
+      "package": "openssl",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u3"
+    },
+    {
+      "id": "CVE-2026-54873",
+      "package": "openssl",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u3"
+    },
+    {
+      "id": "CVE-2026-54875",
+      "package": "openssl",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u3"
+    },
+    {
+      "id": "CVE-2026-63072",
+      "package": "openssl",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u2"
+    },
+    {
+      "id": "CVE-2026-63076",
+      "package": "openssl",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u2"
+    },
+    {
+      "id": "CVE-2026-72897",
+      "package": "openssl",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u3"
+    },
+    {
+      "id": "CVE-2026-75805",
+      "package": "openssl",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u3"
+    },
+    {
+      "id": "CVE-2026-75806",
+      "package": "openssl",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u3"
+    },
+    {
+      "id": "CVE-2026-77696",
+      "package": "openssl",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u3"
+    },
+    {
+      "id": "CVE-2026-84784",
+      "package": "openssl",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u3"
+    },
+    {
+      "id": "CVE-2026-14457",
+      "package": "openssl",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u2"
+    },
+    {
+      "id": "CVE-2026-35189",
+      "package": "openssl",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u3"
+    },
+    {
+      "id": "CVE-2026-35191",
+      "package": "openssl",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u3"
+    },
+    {
+      "id": "CVE-2026-54874",
+      "package": "openssl",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u2"
+    },
+    {
+      "id": "CVE-2026-63073",
+      "package": "openssl",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u2"
+    },
+    {
+      "id": "CVE-2026-63074",
+      "package": "openssl",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u2"
+    },
+    {
+      "id": "CVE-2026-63075",
+      "package": "openssl",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u2"
+    },
+    {
+      "id": "CVE-2026-75803",
+      "package": "openssl",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u2"
+    },
+    {
+      "id": "CVE-2026-14456",
+      "package": "openssl-provider-legacy",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u2"
+    },
+    {
+      "id": "CVE-2026-75804",
+      "package": "openssl-provider-legacy",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u3"
+    },
+    {
+      "id": "CVE-2026-84782",
+      "package": "openssl-provider-legacy",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u3"
+    },
+    {
+      "id": "CVE-2026-18798",
+      "package": "openssl-provider-legacy",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u2"
+    },
+    {
+      "id": "CVE-2026-42772",
+      "package": "openssl-provider-legacy",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u3"
+    },
+    {
+      "id": "CVE-2026-54872",
+      "package": "openssl-provider-legacy",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u3"
+    },
+    {
+      "id": "CVE-2026-54873",
+      "package": "openssl-provider-legacy",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u3"
+    },
+    {
+      "id": "CVE-2026-54875",
+      "package": "openssl-provider-legacy",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u3"
+    },
+    {
+      "id": "CVE-2026-63072",
+      "package": "openssl-provider-legacy",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u2"
+    },
+    {
+      "id": "CVE-2026-63076",
+      "package": "openssl-provider-legacy",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u2"
+    },
+    {
+      "id": "CVE-2026-72897",
+      "package": "openssl-provider-legacy",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u3"
+    },
+    {
+      "id": "CVE-2026-75805",
+      "package": "openssl-provider-legacy",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u3"
+    },
+    {
+      "id": "CVE-2026-75806",
+      "package": "openssl-provider-legacy",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u3"
+    },
+    {
+      "id": "CVE-2026-77696",
+      "package": "openssl-provider-legacy",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u3"
+    },
+    {
+      "id": "CVE-2026-84784",
+      "package": "openssl-provider-legacy",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u3"
+    },
+    {
+      "id": "CVE-2026-14457",
+      "package": "openssl-provider-legacy",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u2"
+    },
+    {
+      "id": "CVE-2026-35189",
+      "package": "openssl-provider-legacy",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u3"
+    },
+    {
+      "id": "CVE-2026-35191",
+      "package": "openssl-provider-legacy",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u3"
+    },
+    {
+      "id": "CVE-2026-54874",
+      "package": "openssl-provider-legacy",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u2"
+    },
+    {
+      "id": "CVE-2026-63073",
+      "package": "openssl-provider-legacy",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u2"
+    },
+    {
+      "id": "CVE-2026-63074",
+      "package": "openssl-provider-legacy",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u2"
+    },
+    {
+      "id": "CVE-2026-63075",
+      "package": "openssl-provider-legacy",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u2"
+    },
+    {
+      "id": "CVE-2026-75803",
+      "package": "openssl-provider-legacy",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "3.5.7-1~deb13u2"
+    },
+    {
+      "id": "CVE-2007-5686",
+      "package": "passwd",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2024-56433",
+      "package": "passwd",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "TEMP-0628843-DBAD28",
+      "package": "passwd",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-13221",
+      "package": "perl-base",
+      "severity": "CRITICAL",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "5.40.1-6+deb13u1"
+    },
+    {
+      "id": "CVE-2026-42496",
+      "package": "perl-base",
+      "severity": "CRITICAL",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "5.40.1-6+deb13u1"
+    },
+    {
+      "id": "CVE-2026-8376",
+      "package": "perl-base",
+      "severity": "CRITICAL",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "5.40.1-6+deb13u1"
+    },
+    {
+      "id": "CVE-2026-42497",
+      "package": "perl-base",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "5.40.1-6+deb13u1"
+    },
+    {
+      "id": "CVE-2026-48962",
+      "package": "perl-base",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "5.40.1-6+deb13u1"
+    },
+    {
+      "id": "CVE-2026-57432",
+      "package": "perl-base",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "5.40.1-6+deb13u1"
+    },
+    {
+      "id": "CVE-2026-57433",
+      "package": "perl-base",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "5.40.1-6+deb13u1"
+    },
+    {
+      "id": "CVE-2026-9538",
+      "package": "perl-base",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2025-15649",
+      "package": "perl-base",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "5.40.1-6+deb13u1"
+    },
+    {
+      "id": "CVE-2026-12087",
+      "package": "perl-base",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "5.40.1-6+deb13u1"
+    },
+    {
+      "id": "CVE-2026-15534",
+      "package": "perl-base",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-19487",
+      "package": "perl-base",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "5.40.1-6+deb13u1"
+    },
+    {
+      "id": "CVE-2026-48959",
+      "package": "perl-base",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "5.40.1-6+deb13u1"
+    },
+    {
+      "id": "CVE-2026-48961",
+      "package": "perl-base",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "5.40.1-6+deb13u1"
+    },
+    {
+      "id": "CVE-2026-7010",
+      "package": "perl-base",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "5.40.1-6+deb13u1"
+    },
+    {
+      "id": "CVE-2026-7017",
+      "package": "perl-base",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "5.40.1-6+deb13u1"
+    },
+    {
+      "id": "CVE-2011-4116",
+      "package": "perl-base",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-82560",
+      "package": "perl-base",
+      "severity": "UNKNOWN",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "TEMP-0517018-A83CE6",
+      "package": "sysvinit-utils",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-18477",
+      "package": "tar",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-18508",
+      "package": "tar",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-5704",
+      "package": "tar",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2005-2541",
+      "package": "tar",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "TEMP-0290435-0B57B5",
+      "package": "tar",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-53612",
+      "package": "util-linux",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2026-53613",
+      "package": "util-linux",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2026-53614",
+      "package": "util-linux",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2026-76642",
+      "package": "util-linux",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-78408",
+      "package": "util-linux",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-78409",
+      "package": "util-linux",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-78410",
+      "package": "util-linux",
+      "severity": "HIGH",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-13595",
+      "package": "util-linux",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2026-27456",
+      "package": "util-linux",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2026-3184",
+      "package": "util-linux",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-53615",
+      "package": "util-linux",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.5-0+deb13u1"
+    },
+    {
+      "id": "CVE-2022-0563",
+      "package": "util-linux",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2025-14104",
+      "package": "util-linux",
+      "severity": "LOW",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": "2.41.3-1"
+    },
+    {
+      "id": "CVE-2026-27171",
+      "package": "zlib1g",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2026-85091",
+      "package": "zlib1g",
+      "severity": "MEDIUM",
+      "target": "rlogics-sample:1.0.0 (debian 13.5)",
+      "fixed_version": ""
+    },
+    {
+      "id": "CVE-2025-8869",
+      "package": "pip",
+      "severity": "MEDIUM",
+      "target": "Python",
+      "fixed_version": "25.3"
+    },
+    {
+      "id": "CVE-2026-13346",
+      "package": "pip",
+      "severity": "MEDIUM",
+      "target": "Python",
+      "fixed_version": "26.2.0"
+    },
+    {
+      "id": "CVE-2026-3219",
+      "package": "pip",
+      "severity": "MEDIUM",
+      "target": "Python",
+      "fixed_version": "26.1"
+    },
+    {
+      "id": "CVE-2026-6357",
+      "package": "pip",
+      "severity": "MEDIUM",
+      "target": "Python",
+      "fixed_version": "26.1"
+    },
+    {
+      "id": "CVE-2026-8643",
+      "package": "pip",
+      "severity": "MEDIUM",
+      "target": "Python",
+      "fixed_version": "26.1.2"
+    },
+    {
+      "id": "CVE-2026-1703",
+      "package": "pip",
+      "severity": "LOW",
+      "target": "Python",
+      "fixed_version": "26.0"
+    }
+  ],
+  "limitations": [
+    "This evaluator handles Trivy vulnerability results only.",
+    "It does not establish exploitability or assess business context.",
+    "A reported fix does not guarantee that an upgrade is safe.",
+    "Misconfigurations, secrets, licenses, and other scanner result types are not evaluated by this policy."
+  ]
+}
