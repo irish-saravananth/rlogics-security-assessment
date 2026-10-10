@@ -9,3 +9,6 @@ __pycache__/
 *.p12
 *.pfx
 secrets/
+
+# Local OpenBao lab configuration and secrets
+/openbao/data/
