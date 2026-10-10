@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: unsafe-demo
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: unsafe-demo
+  template:
+    metadata:
+      labels:
+        app: unsafe-demo
+    spec:
+      hostNetwork: true
+      containers:
+        - name: web
+          image: nginx:latest
+          securityContext:
+            privileged: true
+            runAsUser: 0
+          ports:
+            - containerPort: 80
+      volumes:
+        - name: host-root
+          hostPath:
+            path: /
