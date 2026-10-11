@@ -1,27 +1,17 @@
-cat > docs/exercise-3-manifest-checker.md <<'MD'
 # Exercise 3 — Kubernetes Manifest Security Checker
 
 ## 1. Purpose
 
-This Python utility statically inspects Kubernetes YAML manifests and
-reports potentially risky workload configurations before deployment.
-
-It is intended as a lightweight security gate that can run locally or
-as part of a CI/CD pipeline.
-
-The checker does not deploy resources or modify input manifests.
+This Python utility statically inspects Kubernetes YAML manifests and reports potentially risky workload configurations before deployment. It is designed as a lightweight security gate for local use and CI/CD pipelines. It does not deploy resources or modify manifests.
 
 ## 2. Inputs and outputs
 
-### Inputs
-
+**Inputs**
 - One or more Kubernetes YAML files.
-- YAML documents representing Pods or supported workload controllers.
-- An optional severity threshold supplied with `--fail-on`.
-- An optional `--strict` flag to fail on any reported finding.
+- Optional `--fail-on` severity threshold.
+- Optional `--strict` flag to fail on any finding.
 
-Supported Pod workload types include:
-
+**Supported workload kinds**
 - Pod
 - Deployment
 - StatefulSet
@@ -31,41 +21,29 @@ Supported Pod workload types include:
 - ReplicationController
 - CronJob
 
-### Outputs
+**Outputs**
+- A Markdown-style findings table containing severity, rule, resource, and finding.
+- A summary of finding counts by severity.
+- Exit code `0` when the configured gate passes, or `1` when it fails.
 
-The checker prints a Markdown-style findings table containing severity,
-rule identifier, resource, and a remediation-oriented message.
-
-It also prints a summary of finding counts by severity.
-
-Exit codes:
-
-- `0`: No findings meet the configured failure policy.
-- `1`: The configured failure policy is triggered.
-
-Malformed or unreadable input produces an `INPUT_ERROR` finding.
+Unreadable files and malformed YAML produce an `INPUT_ERROR` finding.
 
 ## 3. Security checks
 
-The checker looks for configurations including:
+The checker identifies:
+- Privileged containers.
+- Explicit root execution and missing non-root enforcement.
+- `hostPath` volumes.
+- `hostNetwork: true`.
+- Missing CPU or memory limits and requests.
+- Missing Pod-level or container-level security contexts.
+- Privilege escalation not explicitly disabled.
+- Writable container root filesystems.
+- Linux capabilities not fully dropped.
+- Mutable image tags, including `latest`.
+- Missing container image references.
 
-| Check | Why it matters |
-|---|---|
-| Privileged containers | Can grant a container excessive host-level capabilities. |
-| Root execution | Increases the impact of a container compromise. |
-| `hostPath` volumes | Can expose host filesystem paths to a workload. |
-| `hostNetwork: true` | Shares the node's network namespace. |
-| Missing CPU or memory limits | Can allow workloads to consume excessive resources. |
-| Missing resource requests | Makes workload resource planning less predictable. |
-| Missing security contexts | Leaves important security settings unenforced. |
-| Privilege escalation | Can allow a process to gain additional privileges. |
-| Writable root filesystem | Allows writes to the container's root filesystem. |
-| Linux capabilities not dropped | May leave unnecessary process capabilities available. |
-| Mutable image tags | Can cause an image reference to resolve to different content over time. |
-| Missing container image | Indicates an incomplete container specification. |
-
-Findings are assigned CRITICAL, HIGH, MEDIUM, or LOW severity.
-The default gate fails on CRITICAL and HIGH findings.
+Findings are classified as CRITICAL, HIGH, MEDIUM, or LOW. The default gate fails on CRITICAL and HIGH findings.
 
 ## 4. Prerequisites
 
@@ -76,3 +54,84 @@ Install the dependency:
 
 ```bash
 python -m pip install PyYAML
+```
+
+## 5. Usage
+
+Scan an unsafe manifest:
+
+```bash
+python scripts/security_manifest_checker.py \
+  examples/exercise-3/unsafe-deployment.yaml
+```
+
+Scan multiple manifests:
+
+```bash
+python scripts/security_manifest_checker.py \
+  examples/exercise-3/unsafe-deployment.yaml \
+  examples/exercise-3/hardened-deployment.yaml
+```
+
+Fail only on CRITICAL findings:
+
+```bash
+python scripts/security_manifest_checker.py \
+  --fail-on CRITICAL \
+  examples/exercise-3/unsafe-deployment.yaml
+```
+
+Fail on any finding:
+
+```bash
+python scripts/security_manifest_checker.py \
+  --strict \
+  examples/exercise-3/hardened-deployment.yaml
+```
+
+Use the exit code in a pipeline:
+
+```bash
+python scripts/security_manifest_checker.py \
+  examples/exercise-3/unsafe-deployment.yaml
+status=$?
+echo "Checker exit code: $status"
+```
+
+A nonzero exit code can fail a CI/CD step and prevent the pipeline from proceeding.
+
+## 6. Examples and tests
+
+Example manifests:
+- `examples/exercise-3/unsafe-deployment.yaml`
+- `examples/exercise-3/hardened-deployment.yaml`
+- `examples/exercise-3/invalid.yaml`
+
+Run the tests:
+
+```bash
+python -m unittest discover -s tests -v
+```
+
+The tests cover an unsafe manifest, a hardened manifest, malformed YAML, and a missing input file.
+
+## 7. Assumptions and limitations
+
+- This is static YAML analysis. It does not query a Kubernetes API server or inspect running workloads.
+- It checks the supported workload kinds and their expected Pod template locations; other resource kinds may not be inspected.
+- Image-tag checks are heuristic. A version tag is not equivalent to digest pinning.
+- Findings indicate policy concerns, not proof of exploitability.
+- Some controls require workload-specific exceptions. Exceptions should be reviewed and documented.
+- This tool does not replace image scanning, runtime monitoring, cluster configuration review, or admission-time enforcement.
+
+## 8. What a mature policy engine does better
+
+A policy engine such as Kyverno or OPA with Gatekeeper can enforce policy at Kubernetes admission time, manage reusable policies centrally, support audit workflows, and integrate with cluster governance. Depending on the engine and configuration, policy systems may also support resource mutation or generation and controlled exceptions.
+
+This script is useful for fast developer feedback but does not provide equivalent cluster-aware enforcement.
+
+## 9. Production design decision
+
+Use this checker as an early pre-deployment gate, not as the final enforcement boundary. For production, enforce equivalent critical controls at Kubernetes admission time through a centrally managed policy engine. Pin images by digest where appropriate, test policies against representative manifests, and manage exceptions through an auditable approval process.
+
+This layered approach catches issues early in CI/CD while reducing reliance on individual deployment paths.
