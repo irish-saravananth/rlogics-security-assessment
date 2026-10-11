@@ -1,0 +1,85 @@
+
+Report Summary
+
+┌────────────────────────────┬────────────┬───────────────────┐
+│           Target           │    Type    │ Misconfigurations │
+├────────────────────────────┼────────────┼───────────────────┤
+│ hardened-deployment.yaml   │ kubernetes │         3         │
+├────────────────────────────┼────────────┼───────────────────┤
+│ kyverno-no-privileged.yaml │ kubernetes │         0         │
+├────────────────────────────┼────────────┼───────────────────┤
+│ network-policy.yaml        │ kubernetes │         0         │
+└────────────────────────────┴────────────┴───────────────────┘
+Legend:
+- '-': Not scanned
+- '0': Clean (no security findings detected)
+
+
+hardened-deployment.yaml (kubernetes)
+=====================================
+Tests: 102 (SUCCESSES: 99, FAILURES: 3)
+Failures: 3 (UNKNOWN: 0, LOW: 2, MEDIUM: 1, HIGH: 0, CRITICAL: 0)
+
+KSV-0020 (LOW): Container 'web' of Deployment 'secure-web' should set 'securityContext.runAsUser' > 10000
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+Force the container to run with user ID > 10000 to avoid conflicts with the host’s user table.
+
+See https://avd.aquasec.com/misconfig/ksv-0020
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ hardened-deployment.yaml:42-67
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  42 ┌           type: RuntimeDefault
+  43 │       containers:
+  44 │         - name: web
+  45 │           image: nginxinc/nginx-unprivileged:1.27
+  46 │           ports:
+  47 │             - name: http
+  48 │               containerPort: 8080
+  49 │           securityContext:
+  50 └             privileged: false
+  ..   
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+KSV-0021 (LOW): Container 'web' of Deployment 'secure-web' should set 'securityContext.runAsGroup' > 10000
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table.
+
+See https://avd.aquasec.com/misconfig/ksv-0021
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ hardened-deployment.yaml:42-67
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  42 ┌           type: RuntimeDefault
+  43 │       containers:
+  44 │         - name: web
+  45 │           image: nginxinc/nginx-unprivileged:1.27
+  46 │           ports:
+  47 │             - name: http
+  48 │               containerPort: 8080
+  49 │           securityContext:
+  50 └             privileged: false
+  ..   
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+KSV-0125 (MEDIUM): Container web in deployment secure-web (namespace: rlogics-secure-demo) uses an image from an untrusted registry.
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+Ensure that all containers use images only from trusted registry domains.
+
+See https://avd.aquasec.com/misconfig/ksv-0125
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ hardened-deployment.yaml:42-67
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  42 ┌           type: RuntimeDefault
+  43 │       containers:
+  44 │         - name: web
+  45 │           image: nginxinc/nginx-unprivileged:1.27
+  46 │           ports:
+  47 │             - name: http
+  48 │               containerPort: 8080
+  49 │           securityContext:
+  50 └             privileged: false
+  ..   
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+

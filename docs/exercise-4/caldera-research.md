@@ -13,6 +13,7 @@ against authorised agents and collect results to assess detection
 coverage.
 
 This document describes a safe local validation plan. It does not
+
 claim that Caldera was installed or executed during this assessment.
 
 ## 2. Architecture concepts
