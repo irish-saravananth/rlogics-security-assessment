@@ -1,8 +1,8 @@
 # Exercise 7 — RAG and Tool-Using Agent Security Test Plan
 
-**Candidate:** Saravanan T H  
-**Status:** Proposed tests; not executed against a live target  
-**Target model:** Internal RAG application with a tool-using AI agent  
+**Candidate:** Saravanan T H
+**Status:** Proposed tests; not executed against a live target
+**Target model:** Internal RAG application with a tool-using AI agent
 **Safety boundary:** Synthetic documents, fake secrets, mocked tools and an isolated authorised test environment only.
 
 ## Test 1 — Direct and indirect prompt injection

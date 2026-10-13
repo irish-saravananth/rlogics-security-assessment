@@ -1,7 +1,7 @@
 # Exercise 7 — AI Security Tool Comparison
 
-**Candidate:** Saravanan T H  
-**Assessment:** RLogics Solutions Security Analyst Engineer Practical Assessment  
+**Candidate:** Saravanan T H
+**Assessment:** RLogics Solutions Security Analyst Engineer Practical Assessment
 **Status:** Research and recommendation; no live AI target tested
 
 ## 1. Objective and threat model
