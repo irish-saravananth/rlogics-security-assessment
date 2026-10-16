@@ -29,7 +29,7 @@
 
 ## Limitations
 - This is a single-node lab, not a highly available deployment.
-- The lab API uses HTTP; do not use this configuration for production.
+- The lab API uses HTTP; not recommended to this configuration for production.
 - The root CA is for this exercise only.
 - Production requires TLS, protected CA key custody, renewal automation,
   revocation procedures, monitoring, and tested recovery.
