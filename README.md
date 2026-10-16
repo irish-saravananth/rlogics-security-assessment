@@ -173,5 +173,3 @@ Additional design notes and evidence are organized under `docs/` and `evidence/`
 ## 10. Repository
 
 GitHub: https://github.com/irish-saravananth/rlogics-security-assessment
-
-Share repository access with the assessment team through the agreed channel. Before submission, verify the final repository contents and confirm that no secrets or unreviewed local artifacts are included.
