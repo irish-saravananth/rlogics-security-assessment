@@ -115,20 +115,9 @@ procedures and explicit stop conditions. Ability updates should be
 reviewed before use. Results should be versioned and linked to detection
 rules, owners, remediation tasks and retest evidence.
 
-## 8. Interview show-and-tell
-
-Demonstrate the architecture and the three discovery-to-telemetry
-mappings. Explain how the lab would be isolated, what telemetry should
-appear, how a detection would be validated and what would be recorded
-if no alert fired. Clearly state that this is a research plan unless a
-live run is subsequently performed and evidenced.
-
 ## References to verify before submission
 
 - MITRE Caldera official documentation: https://caldera.mitre.org/
 - MITRE ATT&CK T1033: https://attack.mitre.org/techniques/T1033/
 - MITRE ATT&CK T1082: https://attack.mitre.org/techniques/T1082/
 - MITRE ATT&CK T1057: https://attack.mitre.org/techniques/T1057/
-
-Confirm current Caldera documentation, plugin availability, ability
-commands and licensing for the version selected for any demonstration.
